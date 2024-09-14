@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7833b44c32914271b0d1e3ecb3f18e57"
+name = "Scaffold App"
+handle = "scaffold-app-6"
+application_url = "https://ministers-urban-dangerous-forecasts.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-d334c3af.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://ministers-urban-dangerous-forecasts.trycloudflare.com/auth/callback",
+  "https://ministers-urban-dangerous-forecasts.trycloudflare.com/auth/shopify/callback",
+  "https://ministers-urban-dangerous-forecasts.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks"
+
+[pos]
+embedded = false
