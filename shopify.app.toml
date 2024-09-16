@@ -3,7 +3,7 @@
 client_id = "7833b44c32914271b0d1e3ecb3f18e57"
 name = "Scaffold App"
 handle = "scaffold-app-6"
-application_url = "https://t-grad-thinks-onion.trycloudflare.com"
+application_url = "https://katie-plasma-shortly-sun.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://t-grad-thinks-onion.trycloudflare.com/auth/callback",
-  "https://t-grad-thinks-onion.trycloudflare.com/auth/shopify/callback",
-  "https://t-grad-thinks-onion.trycloudflare.com/api/auth/callback"
+  "https://katie-plasma-shortly-sun.trycloudflare.com/auth/callback",
+  "https://katie-plasma-shortly-sun.trycloudflare.com/auth/shopify/callback",
+  "https://katie-plasma-shortly-sun.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
